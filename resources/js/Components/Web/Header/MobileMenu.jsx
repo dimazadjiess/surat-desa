@@ -4,6 +4,8 @@ import { Link } from "@inertiajs/react";
 // import useState dari react
 import { useState } from "react";
 
+import { route } from "ziggy-js";
+
 // import icons
 import {
     LayoutDashboard,
@@ -130,7 +132,7 @@ export default function MobileMenu({ isMenuOpen, setIsMenuOpen, auth }) {
                     <>
                         {/* Login – Mobile */}
                         <Link
-                            href={route("resident.login.index")}
+                            href={route("login")}
                             onClick={handleLinkClick}
                             className="inline-flex items-center px-4 py-3 text-sm font-medium rounded-xl bg-white text-gray-900 hover:bg-gray-50 transition-all duration-200 border border-gray-200"
                         >
